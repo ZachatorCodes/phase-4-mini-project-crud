@@ -30,7 +30,7 @@ class SpicesController < ApplicationController
   private
 
   def find_spice
-    Spice.find_by(id: params[:id])
+    Spice.find(params[:id])
   end
 
   def render_spice_not_found
